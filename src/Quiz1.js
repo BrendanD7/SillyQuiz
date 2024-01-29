@@ -71,6 +71,7 @@ const Quiz1 = () => {
   const [showNextQuestion, setShowNextQuestion] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [finalScore, setFinalScore] = useState(0);
 
   useEffect(() => {
     if (showNextQuestion) {
@@ -98,6 +99,7 @@ const Quiz1 = () => {
       let audio = new Audio(process.env.PUBLIC_URL + "/Correct.ogg");
       audio.play();
       setShowConfetti(true);
+      setFinalScore((prevScore) => prevScore + 1);
       alert('Correct!');
       setTimeout(() => {
         setShowConfetti(false);
@@ -110,7 +112,6 @@ const Quiz1 = () => {
     setShowNextQuestion(true);
   };
 
-  const finalScore = Object.values(answers).filter(Boolean).length;
 
   return (
     <div className="Quiz1">
