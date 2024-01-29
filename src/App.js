@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logo from './Doucette.jpg';
 import './App.css';
 import Quiz1 from './Quiz1';
+import Quiz2 from './Quiz2';
 
 const App = () => {
   const [startQuiz, setStartQuiz] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
         {startQuiz ? (
           <Routes>
             <Route path="/quiz1" element={<Quiz1 />} />
+            <Route path="/quiz2" element={<Quiz2 />} />
           </Routes>
         ) : (
           <header className="App-header">
@@ -28,6 +30,9 @@ const App = () => {
             </p>
             <Link to="/quiz1" className="App-link" onClick={startQuizHandler}>
               Quiz 1
+            </Link>
+            <Link to="/quiz2" className="App-link" onClick={startQuizHandler}>
+              Quiz 2
             </Link>
           </header>
         )}
