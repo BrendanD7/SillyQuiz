@@ -24,7 +24,7 @@ const App = () => {
             <img src={logo} className="App-logo" alt="logo" />
             <p>
               <br></br>
-              Welcome to Silly
+              Welcome to Silly Time...
             </p>
             <Link to="/quiz1" className="App-link" onClick={startQuizHandler}>
               Quiz 1
