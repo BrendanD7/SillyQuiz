@@ -30,7 +30,7 @@ const questionsData = [
   },
   {
     id: "question5",
-    text:  "Which game did Billy Mitchell not cheat a record in?",
+    text:  "Which game did Billy Mitchell not alledgedly achieve a possibly cheated record in?",
     options: ["Pac-Man", "Donkey Kong", "Dragster", "Burgertime"],
     answer: "Dragster"
   },
@@ -149,7 +149,7 @@ const Quiz2 = () => {
           <p>Final Score: {finalScore} / {questionsData.length}</p>
           <img src={process.env.PUBLIC_URL + "/Billy.jpg"}/>
           <br></br>
-          <button onClick={() => window.location.href = '/'}>Go to Homepage</button>
+          <button onClick={() => window.location.href = '/SillyQuiz'}>Go to Homepage</button>
         </div>
       )}
     </div>
