@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SillyQuiz/static/css/main.6caaaf8b.css",
+    "main.js": "/SillyQuiz/static/js/main.06945c75.js",
+    "static/js/787.406948c5.chunk.js": "/SillyQuiz/static/js/787.406948c5.chunk.js",
+    "index.html": "/SillyQuiz/index.html",
+    "main.6caaaf8b.css.map": "/SillyQuiz/static/css/main.6caaaf8b.css.map",
+    "main.06945c75.js.map": "/SillyQuiz/static/js/main.06945c75.js.map",
+    "787.406948c5.chunk.js.map": "/SillyQuiz/static/js/787.406948c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6caaaf8b.css",
+    "static/js/main.06945c75.js"
+  ]
+}
